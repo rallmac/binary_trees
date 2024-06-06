@@ -7,7 +7,7 @@
  * @node: The node to check for the siblings
  * Return: The sibling or NULL if node has no sibling
  */
- binary_tree_t *binary_tree_sibling(binary_tree_t *node)
+binary_tree_t *binary_tree_sibling(binary_tree_t *node)
 {
 	if (node == NULL || node->parent == NULL)
 	{
