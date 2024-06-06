@@ -1,3 +1,5 @@
+#include <stdio.h>
+#include <stdlib.h>
 #include "binary_trees.h"
 
 /**
@@ -48,14 +50,21 @@ int binary_tree_is_perfect(const binary_tree_t *tree)
 }
 
 /**
- * swap - This function swaps nodes when child is greater than the parent
+ * swap - This function swaps nodes when child is greater than
+ * the parent
  * @arg_node: parent node
  * @arg_child: child node
  * Return: Nothing
  */
 void swap(heap_t **arg_node, heap_t **arg_child)
 {
-	heap_t *node, *child, *node_child, *node_left, *node_right, *parent;
+	heap_t *node;
+	heap_t *child;
+	heap_t *node_child;
+	heap_t *node_left;
+	heap_t *node_right;
+	heap_t *parent;
+
 	int left_right;
 
 	node = *arg_node, child = *arg_child;
