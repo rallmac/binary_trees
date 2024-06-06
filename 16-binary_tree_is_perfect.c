@@ -15,8 +15,8 @@ int binary_tree_is_p(const binary_tree_t *tree)
 
 	if (tree->left && tree->right)
 	{
-		left = binary_tree_is_p(tree->left);
-		right = binary_tree_is_p(tree->right);
+		left = 1 + binary_tree_is_p(tree->left);
+		right = 1 + binary_tree_is_p(tree->right);
 		if (left == right && left != 0 && right != 0)
 		{
 			return (right);
