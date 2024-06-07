@@ -58,12 +58,7 @@ int binary_tree_is_perfect(const binary_tree_t *tree)
  */
 void swap(heap_t **arg_node, heap_t **arg_child)
 {
-	heap_t *node;
-	heap_t *child;
-	heap_t *node_child;
-	heap_t *node_left;
-	heap_t *node_right;
-	heap_t *parent;
+	heap_t *node, *child, *node_child, *node_left, *node_right, *parent;
 
 	int left_right;
 
